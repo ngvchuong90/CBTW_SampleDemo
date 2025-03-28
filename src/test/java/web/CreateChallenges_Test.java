@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import utilities.Utilities;
 import web.pageObjects.*;
 
-public class WebTest extends BaseTest {
+public class CreateChallenges_Test extends WebBaseTestConfig {
     LandingPage landingPage;
     LoginPage loginPage;
     DashboardPage dashboardPage;

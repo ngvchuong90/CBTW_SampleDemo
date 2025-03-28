@@ -1,7 +1,12 @@
 <suite name="Test Suite">
     <test name="Web Tests">
         <classes>
-            <class name="web.WebTest"/>
+            <class name="web.CreateChallenges_Test"/>
+        </classes>
+    </test>
+    <test name="Mobile Tests">
+        <classes>
+            <class name="mobile.ComputeSum2Value_Test"/>
         </classes>
     </test>
 </suite>

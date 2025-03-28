@@ -1,4 +1,4 @@
-package config;
+package utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,12 +18,8 @@ public class ConfigReader {
     }
 
     private static void loadProperties() {
-        String env = System.getenv("TEST_ENV"); // Read environment variable
-        if (env == null || env.isEmpty()) {
-            env = "qa"; // Default to dev if not set
-        }
-
-        String filePath = getConfigFilePath(env);
+        String env = System.getProperty("env", "qa"); // Default to "qa" if not provided
+        String filePath = System.getProperty("user.dir") + "/config/" + env + ".properties";
 
         try (FileInputStream fis = new FileInputStream(filePath)) {
             properties.load(fis);

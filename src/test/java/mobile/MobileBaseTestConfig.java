@@ -1,4 +1,4 @@
-package pageObjects;
+package mobile;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-public class MobileBaseTest {
+public class MobileBaseTestConfig {
     protected AppiumDriver driver;
 
     @BeforeClass

@@ -1,7 +1,6 @@
-package pageObjects.web;
+package web.pageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import utilities.ConfigReader;
 

@@ -3,7 +3,7 @@ package mobile;
 import mobile.pageObjects.MobileLandingPage;
 import org.testng.annotations.Test;
 
-public class ComputeTwoValues extends MobileBaseTestConfig {
+public class ComputeSum2Value_Test extends MobileBaseTestConfig {
 
     @Test
     public void testComputeSum2Value() {
