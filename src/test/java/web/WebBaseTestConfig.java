@@ -1,4 +1,4 @@
-package pageObjects;
+package web;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,14 +14,11 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
+        System.out.println("Running test on environment: " + System.getProperty("env", "qa"));
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-//        options.addArguments("--start-maximized");
-//        options.addArguments("--remote-allow-origins=*");
-//        options.addArguments("--user-data-dir=/tmp/chrome-profile");
-
-
+        options.addArguments("--incognito");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
